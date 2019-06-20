@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const configuration = require('./webpack.config');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
