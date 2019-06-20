@@ -21,9 +21,6 @@ const useStyles = makeStyles({
     alignItems: 'center',
     width: '100%',
   },
-  list: {
-    // height: '93vh',
-  },
   input: {
     marginLeft: 8,
     flex: 1,
@@ -33,9 +30,13 @@ const useStyles = makeStyles({
   },
 });
 
-const NotesList = ({ notes }) => {
+export const NotesList = ({ notes }) => {
   const classes = useStyles();
   const [searchText, setSearchText] = useState('');
+  const filteredNotes = notes
+    .filter(note =>
+      note.title.toLowerCase().includes(searchText.toLowerCase())
+      || note.details.toLowerCase().includes(searchText.toLowerCase()));
 
   return (
     <Grid>
@@ -58,11 +59,8 @@ const NotesList = ({ notes }) => {
       </Grid>
       <Grid>
         <List component="nav" aria-label="Secondary mailbox folders">
-          {notes
-            .filter(note =>
-              note.title.toLowerCase().includes(searchText.toLowerCase())
-                || note.details.toLowerCase().includes(searchText.toLowerCase()))
-            .map((note, index) => (
+          {filteredNotes.map((note, index) =>
+            (
               <ListItem
                 key={note.id}
                 button
@@ -74,6 +72,16 @@ const NotesList = ({ notes }) => {
               </ListItem>
             ))
           }
+          {!notes.length && (
+            <ListItem>
+              <ListItemText primary="Notes List is Empty" />
+            </ListItem>
+          )}
+          {!!notes.length && !filteredNotes.length && (
+            <ListItem>
+              <ListItemText primary="Search Result is Empty" />
+            </ListItem>
+          )}
         </List>
       </Grid>
       <Grid>
@@ -103,6 +111,6 @@ NotesList.propTypes = {
   })),
 };
 
-const mapStateToProps = ({ notes }) => ({ notes });
+export const mapStateToProps = ({ notes }) => ({ notes });
 
 export default connect(mapStateToProps)(NotesList);

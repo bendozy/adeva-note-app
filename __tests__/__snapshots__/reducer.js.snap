@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`todos reducer should handle CREATE_NOTE 1`] = `
+Object {
+  "nextId": 2,
+  "notes": Array [
+    Object {
+      "id": 1,
+    },
+  ],
+}
+`;
+
+exports[`todos reducer should handle DELETE_NOTE 1`] = `
+Object {
+  "nextId": 3,
+  "notes": Array [],
+}
+`;
+
+exports[`todos reducer should handle UPDATE_NOTE 1`] = `
+Object {
+  "nextId": 3,
+  "notes": Array [
+    Object {
+      "details": "First Testing detail",
+      "id": 1,
+      "title": "First Example",
+    },
+    Object {
+      "details": "Testing detail updated",
+      "id": 2,
+      "title": "Update Example",
+    },
+  ],
+}
+`;
+
+exports[`todos reducer should return the initial state 1`] = `
+Object {
+  "nextId": 1,
+  "notes": Array [],
+}
+`;

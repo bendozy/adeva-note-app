@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Note /> should render a <EmptyPage /> component when no note is found 1`] = `
+<EmptyPage
+  text="The requested note is not available"
+  title="Note Not Found"
+/>
+`;
+
+exports[`<Note /> should render a <Note /> component 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Typography))
+        color="inherit"
+        noWrap={true}
+        variant="h4"
+      >
+        Test Example
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-details-1"
+        color="inherit"
+        component="p"
+        variant="body1"
+      >
+        Testing detail
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Fab))
+    aria-label="Edit Note"
+    className="makeStyles-fab-2 makeStyles-fabEdit-3"
+    color="primary"
+    component={[Function]}
+    to="/notes/1/edit"
+  >
+    <WithStyles(ForwardRef(Icon))>
+      edit_icon
+    </WithStyles(ForwardRef(Icon))>
+  </WithStyles(ForwardRef(Fab))>
+  <WithStyles(ForwardRef(Fab))
+    aria-label="Delete Note"
+    className="makeStyles-fab-2 makeStyles-fabDelete-4"
+    color="secondary"
+    onClick={[Function]}
+  >
+    <DeleteIcon />
+  </WithStyles(ForwardRef(Fab))>
+  <WithStyles(ForwardRef(Dialog))
+    aria-describedby="alert-dialog-description"
+    aria-labelledby="alert-dialog-title"
+    onClose={[Function]}
+    open={false}
+  >
+    <WithStyles(ForwardRef(DialogTitle))
+      id="alert-dialog-title"
+    >
+      Delete Note?
+    </WithStyles(ForwardRef(DialogTitle))>
+    <WithStyles(ForwardRef(DialogContent))>
+      <WithStyles(ForwardRef(DialogContentText))
+        id="alert-dialog-description"
+      >
+        Are you sure you want to delete this note.
+      </WithStyles(ForwardRef(DialogContentText))>
+    </WithStyles(ForwardRef(DialogContent))>
+    <WithStyles(ForwardRef(DialogActions))>
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        onClick={[Function]}
+      >
+        Cancel
+      </WithStyles(ForwardRef(Button))>
+      <WithStyles(ForwardRef(Button))
+        autoFocus={true}
+        color="secondary"
+        onClick={[Function]}
+      >
+        Yes, Delete
+      </WithStyles(ForwardRef(Button))>
+    </WithStyles(ForwardRef(DialogActions))>
+  </WithStyles(ForwardRef(Dialog))>
+</Fragment>
+`;

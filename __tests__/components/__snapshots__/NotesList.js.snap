@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotesList /> should render a <ListItem /> when there is no result 1`] = `
+<WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Paper))
+      className="makeStyles-search-1"
+    >
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="Menu"
+        className="makeStyles-iconButton-3"
+      >
+        <MenuIcon />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(InputBase))
+        className="makeStyles-input-2"
+        inputProps={
+          Object {
+            "aria-label": "Search Notes",
+          }
+        }
+        onChange={[Function]}
+        placeholder="Search Notes"
+        value=""
+      />
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="Search"
+        className="makeStyles-iconButton-3"
+      >
+        <SearchIcon />
+      </WithStyles(ForwardRef(IconButton))>
+    </WithStyles(ForwardRef(Paper))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(List))
+      aria-label="Secondary mailbox folders"
+      component="nav"
+    >
+      <WithStyles(ForwardRef(ListItem))>
+        <WithStyles(ForwardRef(ListItemText))
+          primary="Notes List is Empty"
+        />
+      </WithStyles(ForwardRef(ListItem))>
+    </WithStyles(ForwardRef(List))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      component={[Function]}
+      fullWidth={true}
+      to="/notes/add"
+      variant="contained"
+    >
+      Add New Note
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;
+
+exports[`<NotesList /> should render a <NoteList /> component 1`] = `
+<WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Paper))
+      className="makeStyles-search-1"
+    >
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="Menu"
+        className="makeStyles-iconButton-3"
+      >
+        <MenuIcon />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(InputBase))
+        className="makeStyles-input-2"
+        inputProps={
+          Object {
+            "aria-label": "Search Notes",
+          }
+        }
+        onChange={[Function]}
+        placeholder="Search Notes"
+        value=""
+      />
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="Search"
+        className="makeStyles-iconButton-3"
+      >
+        <SearchIcon />
+      </WithStyles(ForwardRef(IconButton))>
+    </WithStyles(ForwardRef(Paper))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(List))
+      aria-label="Secondary mailbox folders"
+      component="nav"
+    >
+      <WithStyles(ForwardRef(ListItem))>
+        <WithStyles(ForwardRef(ListItemText))
+          primary="Notes List is Empty"
+        />
+      </WithStyles(ForwardRef(ListItem))>
+    </WithStyles(ForwardRef(List))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      component={[Function]}
+      fullWidth={true}
+      to="/notes/add"
+      variant="contained"
+    >
+      Add New Note
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;
+
+exports[`<NotesList /> should render multiple <ListItem /> when there is multiple results 1`] = `
+<WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Paper))
+      className="makeStyles-search-1"
+    >
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="Menu"
+        className="makeStyles-iconButton-3"
+      >
+        <MenuIcon />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(InputBase))
+        className="makeStyles-input-2"
+        inputProps={
+          Object {
+            "aria-label": "Search Notes",
+          }
+        }
+        onChange={[Function]}
+        placeholder="Search Notes"
+        value=""
+      />
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="Search"
+        className="makeStyles-iconButton-3"
+      >
+        <SearchIcon />
+      </WithStyles(ForwardRef(IconButton))>
+    </WithStyles(ForwardRef(Paper))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(List))
+      aria-label="Secondary mailbox folders"
+      component="nav"
+    >
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        component={[Function]}
+        divider={true}
+        key="1"
+        to="/notes/1"
+      >
+        <WithStyles(ForwardRef(ListItemText))
+          primary="Test Example"
+        />
+      </WithStyles(ForwardRef(ListItem))>
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        component={[Function]}
+        divider={false}
+        key="2"
+        to="/notes/2"
+      >
+        <WithStyles(ForwardRef(ListItemText))
+          primary="Second Example"
+        />
+      </WithStyles(ForwardRef(ListItem))>
+    </WithStyles(ForwardRef(List))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      component={[Function]}
+      fullWidth={true}
+      to="/notes/add"
+      variant="contained"
+    >
+      Add New Note
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;

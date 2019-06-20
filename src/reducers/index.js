@@ -4,11 +4,10 @@ import {
   DELETE_NOTE,
 } from '../constants';
 
-const initialState = {
+export const initialState = {
   notes: [],
   nextId: 1,
 };
-
 
 export default (state = initialState, action) => {
   switch (action.type) {

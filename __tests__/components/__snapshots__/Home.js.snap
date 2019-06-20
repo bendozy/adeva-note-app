@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should render a <Home /> component with Typography components 1`] = `
+<WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Typography))
+      color="inherit"
+      noWrap={true}
+      variant="h4"
+    >
+      Welcome
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-body-1"
+      color="inherit"
+      component="p"
+      variant="body1"
+    >
+      Hello there, thanks you for checking out this simple notes application. With this app, you can create, update, delete and search for notes.
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-body-1"
+      color="inherit"
+      component="p"
+      variant="body1"
+    >
+      This appliction uses localStorage for persistence. To get startted, click on the "Add New Note" button on the sidebar.
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;

@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const NoteForm = ({
+export const NoteForm = ({
   note,
   nextId,
   history,
@@ -134,14 +134,14 @@ NoteForm.propTypes = {
   updateNoteAction: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = ({ notes, nextId }, { match: { params } }) =>
+export const mapStateToProps = ({ notes, nextId }, { match: { params } }) =>
   ({
     note: notes.find(note => note.id === parseInt(params.noteId, 10)),
     isEditMode: !!params.noteId,
     nextId,
   });
 
-const mapDispatchToProps = dispatch =>
+export const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
       createNoteAction,

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EmptyPage /> should render a <EmptyPage /> component with default props 1`] = `
+<WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Typography))
+      color="inherit"
+      noWrap={true}
+      variant="h4"
+    >
+      Page Not Found
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-body-1"
+      color="inherit"
+      component="p"
+      variant="body1"
+    >
+      The requested url could not be found
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;

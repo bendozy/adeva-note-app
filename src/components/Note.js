@@ -16,7 +16,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Button from '@material-ui/core/Button';
-import Snackbar from '@material-ui/core/Snackbar';
 import EmptyPage from './EmptyPage';
 import { deleteNote as deleteNoteAction } from '../actions/notes';
 
@@ -38,7 +37,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Note = ({
+export const Note = ({
   history,
   deleteNoteAction: deleteNote,
   note,
@@ -50,7 +49,6 @@ const Note = ({
 }) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const [snackOpen, setSnackOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(true);
@@ -63,7 +61,6 @@ const Note = ({
   const handleSubmit = () => {
     deleteNote(note.id);
     setOpen(false);
-    setSnackOpen(true);
     history.push('/');
   };
 
@@ -133,16 +130,6 @@ const Note = ({
           </Button>
         </DialogActions>
       </Dialog>
-      <Snackbar
-        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-        open={snackOpen}
-        onClose={() => setSnackOpen(false)}
-        autoHideDuration={4000}
-        ContentProps={{
-          'aria-describedby': 'message-id',
-        }}
-        message={<span id="message-id">Note deleted successfully</span>}
-      />
     </React.Fragment>
   );
 };
@@ -163,12 +150,12 @@ Note.propTypes = {
   deleteNoteAction: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = ({ notes }, { match: { params } }) =>
+export const mapStateToProps = ({ notes }, { match: { params } }) =>
   ({
     note: notes.find(note => note.id === parseInt(params.noteId, 10)),
   });
 
-const mapDispatchToProps = dispatch =>
+export const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
       deleteNoteAction,

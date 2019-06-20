@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Note action creators tests creates CREATE_NOTE when creating a note is successful 1`] = `
+Array [
+  Object {
+    "note": Object {
+      "details": "Testing detail",
+      "title": "Example",
+    },
+    "type": "CREATE_NOTE",
+  },
+]
+`;
+
+exports[`Note action creators tests creates DELETE_NOTE when deleting a note is successful 1`] = `
+Array [
+  Object {
+    "id": 3,
+    "type": "DELETE_NOTE",
+  },
+]
+`;
+
+exports[`Note action creators tests creates UPDATE_NOTE when updating a note is successful 1`] = `
+Array [
+  Object {
+    "note": Object {
+      "details": "Testing detail updated",
+      "id": 2,
+      "title": "Update Example",
+    },
+    "type": "UPDATE_NOTE",
+  },
+]
+`;
