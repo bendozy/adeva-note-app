@@ -26,7 +26,7 @@ const Home = () => {
           color="inherit"
           className={classes.body}
         >
-          Hello there, thanks you for checking out this simple notes application.
+          Hello there, thank you for checking out this simple notes application.
           With this app, you can create, update, delete and search for notes.
         </Typography>
         <Typography
