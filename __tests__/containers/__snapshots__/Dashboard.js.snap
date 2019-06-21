@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard /> should render a <Dashboard /> component 1`] = `
+<BrowserRouter>
+  <CssBaseline />
+  <WithStyles(ForwardRef(AppBar))
+    position="relative"
+  >
+    <WithStyles(ForwardRef(Toolbar))>
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="Home"
+        className="makeStyles-homeIconButton-2"
+        component={[Function]}
+        to="/"
+      >
+        <HomeIcon />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(Typography))
+        color="inherit"
+        noWrap={true}
+        variant="h6"
+      >
+        Adeva Note App
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(Toolbar))>
+  </WithStyles(ForwardRef(AppBar))>
+  <main>
+    <WithStyles(ForwardRef(Grid))
+      className="makeStyles-root-1"
+      container={true}
+      spacing={2}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        sm={3}
+        xs={12}
+      >
+        <Connect(NotesList) />
+      </WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        sm={9}
+        xs={12}
+      >
+        <WithStyles(ForwardRef(Paper))
+          className="makeStyles-paper-3"
+        >
+          <Switch>
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+            />
+            <Route
+              component={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "WrappedComponent": [Function],
+                  "compare": null,
+                  "displayName": "Connect(NoteForm)",
+                  "type": [Function],
+                }
+              }
+              exact={true}
+              path="/notes/add"
+            />
+            <Route
+              component={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "WrappedComponent": [Function],
+                  "compare": null,
+                  "displayName": "Connect(Note)",
+                  "type": [Function],
+                }
+              }
+              exact={true}
+              path="/notes/:noteId"
+            />
+            <Route
+              component={
+                Object {
+                  "$$typeof": Symbol(react.memo),
+                  "WrappedComponent": [Function],
+                  "compare": null,
+                  "displayName": "Connect(NoteForm)",
+                  "type": [Function],
+                }
+              }
+              exact={true}
+              path="/notes/:noteId/edit"
+            />
+            <Route
+              component={[Function]}
+            />
+          </Switch>
+        </WithStyles(ForwardRef(Paper))>
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+  </main>
+</BrowserRouter>
+`;

@@ -33,24 +33,49 @@ export const NoteForm = ({
     title: note ? note.title : '',
     details: note ? note.details : '',
   });
+  const [errors, setErrors] = useState({});
 
   const handleChange = name => (event) => {
     setValues({ ...values, [name]: event.target.value });
+    setErrors({ ...errors, [name]: undefined });
   };
 
   const formatInput = name => (event) => {
     setValues({ ...values, [name]: event.target.value.trim() });
   };
 
+  const validate = () => {
+    let isValid = true;
+    const formErrors = {};
+
+    setErrors({});
+
+    if (!values.title) {
+      formErrors.title = 'Enter Note Title';
+      isValid = false;
+    }
+
+    if (!values.details) {
+      formErrors.details = 'Enter Note Details';
+      isValid = false;
+    }
+
+    setErrors(formErrors);
+
+    return isValid;
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (note) {
-      updateNote(Object.assign({}, note, values));
-      history.push(`/notes/${note.id}`);
-    } else {
-      createNote(values);
-      history.push(`/notes/${nextId}`);
+    if (validate()) {
+      if (note) {
+        updateNote(Object.assign({}, note, values));
+        history.push(`/notes/${note.id}`);
+      } else {
+        createNote(values);
+        history.push(`/notes/${nextId}`);
+      }
     }
   };
 
@@ -73,6 +98,7 @@ export const NoteForm = ({
       <form
         className={classes.form}
         onSubmit={handleSubmit}
+        noValidate
       >
         <Grid>
           <TextField
@@ -84,6 +110,7 @@ export const NoteForm = ({
             onChange={handleChange('title')}
             onBlur={formatInput('title')}
             margin="normal"
+            error={errors.title}
           />
         </Grid>
         <Grid>
@@ -97,6 +124,7 @@ export const NoteForm = ({
             multiline
             rows={20}
             margin="normal"
+            error={errors.details}
           />
         </Grid>
         <Grid>

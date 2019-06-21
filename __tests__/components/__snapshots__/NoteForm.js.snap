@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NoteForm /> should render a <Note /> component 1`] = `
+<WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Typography))
+      color="inherit"
+      noWrap={true}
+      variant="h4"
+    >
+      New
+       Note
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Grid))>
+  <form
+    className="makeStyles-form-1"
+    noValidate={true}
+    onSubmit={[Function]}
+  >
+    <WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(TextField))
+        fullWidth={true}
+        id="title"
+        label="Note Title"
+        margin="normal"
+        onBlur={[Function]}
+        onChange={[Function]}
+        required={true}
+        value=""
+      />
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(TextField))
+        fullWidth={true}
+        id="title"
+        label="Note Details"
+        margin="normal"
+        multiline={true}
+        onChange={[Function]}
+        required={true}
+        rows={20}
+        value=""
+      />
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        fullWidth={true}
+        type="submit"
+        variant="contained"
+      >
+        Create
+         Note
+      </WithStyles(ForwardRef(Button))>
+    </WithStyles(ForwardRef(Grid))>
+  </form>
+</WithStyles(ForwardRef(Grid))>
+`;
